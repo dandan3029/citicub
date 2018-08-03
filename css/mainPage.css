@@ -189,7 +189,7 @@ li a{
 }
 
 .one{
-
+    float: left;
     font-family: "微软雅黑";
     font-size: 36px;
     padding-top:3.5%;
@@ -200,9 +200,10 @@ li a{
 }
 
 .character1{
+    float: left;
     position: relative;
-    top: -65%;
-    left: 12.5%;
+    top: 15%;
+    left: 5%;
     width:300px;
 }
 
@@ -214,9 +215,10 @@ li a{
 }
 
 .centerdiv1{
+    float: left;
     position: relative;
-    top: -142%;
-    left: 34%;
+    top:6%;
+    left: 5%;
     width:50px;
     border-right: 2px dashed #8d8d8d;
     padding-bottom:200px;
@@ -224,9 +226,10 @@ li a{
 }
 
 .character2{
+    float: left;
     position: relative;
-    top: -178%;
-    left: 41%;
+    top: 15%;
+    left: 10%;
     width:300px;
 }
 
@@ -238,11 +241,12 @@ li a{
 }
 
 .two{
+    float: left;
     font-family: "微软雅黑";
     font-size: 36px;
     position: relative;
-    top:-242%;
-    left:67%;
+    top:20%;
+    left:14%;
     color: #2493D3;
     writing-mode: vertical-lr;
     writing-mode: tb-lr;
@@ -262,9 +266,10 @@ li a{
 }
 
 .character3{
+    float:left;
     position: relative;
-    top: -69.5%;
-    left: 35%;
+    top: 15%;
+    left: 5%;
     width:300px;
 }
 
@@ -276,9 +281,10 @@ li a{
 }
 
 .centerdiv2{
+    float:left;
     position: relative;
-    top: -140%;
-    left: 57%;
+    top: 8%;
+    left: 5%;
     width:50px;
     border-right: 2px dashed #8d8d8d;
     padding-bottom:200px;
@@ -286,9 +292,10 @@ li a{
 }
 
 .character4{
+    float:left;
     position: relative;
-    top: -180%;
-    left: 65%;
+    top: 15.5%;
+    left: 9%;
     width:300px;
 }
 
@@ -300,40 +307,203 @@ li a{
 }
 
 .three{
+    float:left;
     font-family: "微软雅黑";
     font-size: 36px;
     position: relative;
-    top:-243%;
-    left:91.5%;
+    top:20%;
+    left:14%;
     color: #2493D3;
     writing-mode: vertical-lr;
     writing-mode: tb-lr;
 }
 
 /*-----------------副导航栏------------------*/
-.daohang{
-    position: absolute;
-    width:auto;
-    height:800px;
-    /*margin-left:12.5%;*/
-    /*padding-top:80px;*/
-    left: 50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-}
+
 
 
 /*----------------主题部分下-----------------*/
 
+.contain2{
+    position: absolute;
+    width:1480px;
+    height:800px;
+    left:50%;
+    top:160%;
+    transform: translate(-50%, -50%);
+}
 
+.contain3{
+    position: absolute;
+    width:1480px;
+    height:800px;
+    left:50%;
+    top: 213%;
+    transform: translate(-50%, -50%);
+}
 
+.contain4{
+    position: absolute;
+    width:1480px;
+    height:800px;
+    left:50%;
+    top: 266%;
+    transform: translate(-50%, -50%);
+}
+
+.point1{
+    border:1px solid #d0d0d0;
+    width: 24%;
+    height:450px;
+    float: left;
+
+}
+
+.point1 img{
+    width:100%;
+    height:auto;
+}
+
+.point1 h6{
+    text-align: center;
+    margin:auto;
+    font-family:"微软雅黑";
+    color: #4f5352;
+    font-size:22px;
+    clear:both;
+}
+
+.point1 p{
+    text-align: center;
+    margin-top:auto;
+    font-size:20px;
+    font-family: 微软雅黑;
+    color: #b9acab;
+}
+
+.point1 span{
+    font-size:25px;
+    font-family: 微软雅黑;
+    color: #6cca95;
+}
+
+.point1 button{
+    margin:auto;
+    margin-top: 10px;
+    width:148px;
+    height:45px;
+    font-size:20px;
+    font-family: 微软雅黑;
+    background:#4ecf79;
+    color: white;
+}
+
+.point2{
+    position : relative;
+    left:10px;
+    border:1px solid #d0d0d0;
+    width: 24%;
+    height:450px;
+    float: left;
+}
+
+.point3{
+    position : relative;
+    left:20px;
+    border:1px solid #d0d0d0;
+    width: 24%;
+    height:450px;
+    float: left;
+}
+
+.point4{
+    position : relative;
+    left:30px;
+    border:1px solid #d0d0d0;
+    width: 24%;
+    height:450px;
+    float: left;
+}
+
+.point2 img,.point3 img,.point4 img{
+    width:100%;
+    height:auto;
+}
+
+.point2 h6,.point3 h6,.point4 h6{
+    text-align: center;
+    margin:auto;
+    font-family:"微软雅黑";
+    color: #4f5352;
+    font-size:22px;
+    clear:both;
+}
+
+.point2 p,.point3 p,.point4 p{
+    text-align: center;
+    margin:auto;
+    font-size:20px;
+    font-family: 微软雅黑;
+    color: #b9acab;
+}
+
+.point2 span,.point3 span,.point4 span{
+    font-size:25px;
+    font-family: 微软雅黑;
+    color: #6cca95;
+}
+
+.point2 button,.point4 button{
+    margin:auto;
+    margin-top: 10px;
+    width:148px;
+    height:45px;
+    font-size:20px;
+    font-family: 微软雅黑;
+    background: #7ab6f4;
+    color: white;
+}
+
+.point3 button{
+    margin:auto;
+    margin-top: 10px;
+    width:148px;
+    height:45px;
+    font-size:20px;
+    font-family: 微软雅黑;
+    background:#4ecf79;
+    color: white;
+}
+
+.zan{
+    float:left;
+    display:inline-block;
+    width:70px;
+    height:20px;
+    margin-top:10px;
+    margin-bottom: 5px;
+    margin-left:35px;
+}
+.zan img{
+    width:25px;
+    height:25px;
+    float:left;
+}
+.zan p{
+    line-height:25px;
+    color: #dcdcdc;
+}
+
+.point1:hover,.point2:hover,.point3:hover,.point4:hover{
+    box-shadow: 6px 8px 8px #dcdcdc;
+}
 /*-------------------尾栏--------------------*/
 .foot{
     position:absolute;
     display: inline-block;
     height: 480px;
     width: 100%;
-    margin-top: 53.7%;
+    margin-top: 136%;
 }
 .on_foot{
     position:relative;
