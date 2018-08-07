@@ -149,7 +149,7 @@ li a{
     display: inline-block;
     height: 100%;
     width: 60%;
-    background:url("head_portrait.png");
+    background:url("../images/head_portrait.png");
     background-size: 100% 100%;
     float: left;
 }
@@ -289,12 +289,12 @@ input[type="checkbox"]:checked+label::before {
     display: inline-block;
     height: 100%;
     width: 8%;
-    background: url("QQ_g.png");
+    background: url("../images/QQ_g.png");
     background-size: 100% 100%;
     margin-left: 18%;
 }
 .login_qq:hover{
-    background: url("QQ.png");
+    background: url("../images/QQ.png");
     background-size: 100% 100%;
 }
 .login_wechat{
@@ -302,12 +302,12 @@ input[type="checkbox"]:checked+label::before {
     display: inline-block;
     height: 100%;
     width: 10%;
-    background: url("wechat_g.png");
+    background: url("../images/wechat_g.png");
     background-size: 100% 100%;
     margin-left: 20%;
 }
 .login_wechat:hover{
-    background: url("wechat.png");
+    background: url("../images/wechat.png");
     background-size: 100% 100%;
 }
 .login_sina{
@@ -315,12 +315,12 @@ input[type="checkbox"]:checked+label::before {
     display: inline-block;
     height: 100%;
     width: 11%;
-    background: url("weibo_g.png");
+    background: url("../images/weibo_g.png");
     background-size: 100% 100%;
     margin-left: 16%;
 }
 .login_sina:hover{
-    background: url("weibo.png");
+    background: url("../images/weibo.png");
     background-size: 100% 100%;
 }
 /*尾栏*/
