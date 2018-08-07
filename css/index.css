@@ -13,6 +13,7 @@ body{
     font: normal 100% Helvetica, Arial, sans-serif;
     font-family: "Adobe 黑体 Std R";
     zoom: 80%;
+    height:auto;
 }
 
 /*导航栏部分*/
@@ -143,11 +144,10 @@ body{
 
 /**************************************轮播图部分********************************8*/
 .contain{
-    margin-top: 97.92px;
-    position: absolute;
     left: 50%;
     width:80%;
-    transform: translate(-50%);
+    margin:0 auto;
+    height:auto;
 }
 
 .carousel slide{
@@ -317,6 +317,7 @@ body{
 
 /*-------------------页尾--------------------*/
 .foot{
+    z-index: 100;
     display: inline-block;
     margin-top: 40px;
     height: 480px;
