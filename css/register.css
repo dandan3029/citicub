@@ -147,18 +147,18 @@ body{
     margin-top: 150px;
     position: absolute;
     left: 50%;
-    width:80%;
+    width:70%;
     height:1000px;
     background-color: white;
     transform: translate(-50%);
 }
 .left-box{
-    width:45%;
+    width:50%;
     height:100%;
     float: left;
 }
 .right-box{
-    width:55%;
+    width:50%;
     height:100%;
     float: left;
     border-left:1px dashed #8d8d8d;
