@@ -132,181 +132,90 @@ body{
     border-color: #2493D3;
     text-decoration: none;
 }
-/**********************************************************主体部分**************************************************/
+
+
+/******************************************************主体部分************************************************/
 .contain{
     left: 50%;
     width:80%;
     margin:0 auto;
     height:auto;
 }
-
-.box{
-    width:100%;
-    margin: 30px auto;
+.title{
+    width: 100%;
+    margin:30px auto;
+    padding:30px;
     background-color: white;
-    /*position: relative;*/
-    /*top:30px;*/
 }
-
-.box ul{
+.content-left{
+    width:68%;
     height:auto;
-    overflow: auto;
-    list-style: none;
-    padding: 20px;
-}
-
-.box ul li{
+    margin:0 2% 30px 0;
     float: left;
-    display: inline-block;
-}
-.box ul li a{
-    text-decoration: none;
-    color: #6c6c6c;
-    margin:10px;
+    background-color: white;
+    padding:30px;
 }
 
-/*****************************创意卡片***********************/
-.little-box{
-    height:auto;
-    background-color: white;
-    border:1px solid #b9acab;
+.content-left h2{
+    font-size: 40px;
+    font-family: 微软雅黑;
+    margin-bottom: 40px;
+}
+
+.content-left h3{
+    font-size: 32px;
+    font-family: 微软雅黑;
+    margin:30px 0;
+}
+
+.content-left p{
+    font-size: 26px;
+    font-family: 微软雅黑;
+}
+
+.content-left img{
+    width: 100%;
     margin-bottom: 30px;
 }
-
-.little-box a{
-    color: black;
-    text-decoration: none;
+.content-left video{
+    width:100%;
+    height:auto;
 }
 
-.little-box a:hover{
-    color: black;
-    text-decoration: none;
+.content-right{
+    width:30%;
+    height:auto;
+    float: left;
+
+}
+.right-top{
+    background-color: white;
+    width:100%;
+    padding:20px;
+    margin-bottom:20px;
 }
 
-.little-box h4{
-    margin: 20px;
+.right-top h4{
+    border-bottom:1px solid #bcb9b5;
+    margin-bottom: 20px;
 }
 
-/*-------------------页尾--------------------*/
-.foot{
-    z-index: 100;
-    display: inline-block;
-    margin-top: 40px;
-    height: 480px;
-    width: 100%;
+.right-top span{
+    margin:5px;
+    border-radius: 5px;
+    border: 1px solid #bcb9b5;
+    font-size: 20px;
+    font-family: 微软雅黑;
 }
-.on_foot{
-    display: inline-block;
-    height: 60%;
-    width: 100%;
-    background: rgb(42, 42, 42);
-    border: none;
+.right-bottom{
+    background-color: white;
+    width:100%;
+    padding:20px;
 }
-.on_foot a{
-    padding: 0;
-    color: #c4c4c4;
-    font-size: 14px;
+.right-bottom h4{
+    border-bottom:1px solid #bcb9b5;
+    margin-bottom: 20px;
 }
-
-.foot_part1{
-    display: inline-block;
-    height: 73%;
-    color: #c4c4c4;
-    margin: 4% 5% 0 37%;
-}
-.foot_title1{
-    display: inline-block;
-    /*width: 100%;*/
-    margin: 0 5px 8% 0;
-}
-.foot_part1 p{
-    text-align: center;
-    font-weight: bold;
-}
-.foot_part1 ul{
-    display: inline-block;
-    list-style: none;
-    width: 100%;
-    height: 65.7%;
-}
-.foot_part1 li{
-    position: relative;
-    display:block;margin: 5% 0 2% 0;
-}
-
-.v_line{
-    display: inline;
-    border: solid #bfbfbf;
-    margin-top: 10%;
-    padding-top:8%;
-    padding-bottom:1%;
-    border-width: 0 1px 0 0;
-    line-height: 150%;
-}
-.on_foot a:hover{
-    color:#7ab6f4;
-    text-decoration: none;
-}
-
-.low_foot a{
-    padding: 0;
-    color: #c4c4c4;
-    font-size: 14px;
-}
-.foot_part2{
-    position: relative;
-    display: inline-block;
-    height: 73%;
-    color: #c4c4c4;
-    top: 6px;/*在chorme中没有对其*/
-    margin: 0 0 0 7%;
-}
-.foot_part2 ul{
-    list-style: none;
-}
-.foot_part2 a{
-    margin: 10% 0 0 2%;
-    font-size: 13px;
-}
-.foot_part2 p{
-    margin: 0 0 20% 0;
-    text-align: center;
-    font-weight: bold;
-}
-
-.low_foot{
-    position:relative;
-    display: inline-block;
-    height: 40%;
-    width: 100%;
-    top: -1%;
-    background: rgb(14, 14, 14);
-    border: none;
-}
-
-.low_foot ul{
-    list-style: none;
-    margin: 6% 0 0 25%;
-}
-.low_foot li{
-    display: inline-block;
-    width: 6%;
-    height: 8%;
-    margin: 0;
-}
-.low_foot a{
-    padding: 0;
-    font-size: 14px;
-}
-.low_foot a:hover{
-    color: #7ab6f4;
-    text-decoration: none;
-}
-.v_line2{
-    text-align: center;
-    width:15%;
-    border: solid #707070;
-    border-width: 0 1px 0 0;
-    padding:3px;
-    margin-left:5px;
+.right-box img{
+    width:100%;
 }
