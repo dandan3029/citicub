@@ -144,8 +144,7 @@ body{
     width:100%;
     margin: 30px auto;
     background-color: white;
-    /*position: relative;*/
-    /*top:30px;*/
+    font-size: 22px;
 }
 
 .box ul{
@@ -158,11 +157,13 @@ body{
 .box ul li{
     float: left;
     display: inline-block;
+
 }
 .box ul li a{
     text-decoration: none;
     color: #6c6c6c;
-    margin:10px;
+    margin: 0 20px;
+    padding:10px;
 }
 
 /*****************************创意卡片***********************/
