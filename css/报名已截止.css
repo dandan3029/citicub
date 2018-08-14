@@ -161,7 +161,7 @@ body{
 }
 .production-block input{
     color: #f7f7f7;
-    background-color: #0085c6;
+    background-color: #999999;
     width:120px;
     height:40px;
     border-radius: 10px;
@@ -276,7 +276,6 @@ body{
     padding-top: 20px;
     border-bottom: 2px dashed #999999;
 }
-
 
 /*-------------------页尾--------------------*/
 .foot{
