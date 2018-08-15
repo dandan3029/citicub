@@ -134,7 +134,7 @@ body{
 }
 
 .content-left{
-    width:68%;
+    width:70%;
     height:1000px;
     margin:0 2% 30px 0;
     float: left;
@@ -186,7 +186,7 @@ body{
     font-size: 20px;
 }
 .content-right{
-    width:26%;
+    width:28%;
     height:auto;
     float: right;
 }
@@ -273,7 +273,7 @@ body{
     height:50px;
     color: #d02800;
     font-size: 24px;
-    padding-top: 20px;
+    padding:10px 0;
     border-bottom: 2px dashed #999999;
 }
 

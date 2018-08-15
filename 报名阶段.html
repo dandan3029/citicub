@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <title>报名阶段</title>
     <link href="css/报名阶段.css" rel="stylesheet" type="text/css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="background-color: rgb(242,242,242)">
 
 <div class="nav">
     <div class="logo">
@@ -35,7 +41,7 @@
         <div class="production-block">
             <p>奖励金：<span style="color: #a33104">￥5000</span></p>
             <p>任务类型：<span>产品广告</span></p>
-            <input type="button" value="我要报名">
+            <input type="button" value="我要报名" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
         </div>
         <img src="images/进度（报名）.png" style="margin: 30px 0;width:100%;">
         <h6 style="margin-left: 1%;">发布需求</h6>
@@ -100,11 +106,11 @@
                 <strong><span>科隆科技</span></strong>
                 <strong style="float: right"><span>57人</span>已报名</strong>
             </div>
-            <div class="list-content">
-                <strong style="float: left;margin-right: 100px;"><span>￥5000</span></strong>
-                <strong><span>科隆科技</span></strong>
-                <strong style="float: right"><span>57人</span>已报名</strong>
-            </div>
+            <!--<div class="list-content">-->
+                <!--<strong style="float: left;margin-right: 100px;"><span>￥5000</span></strong>-->
+                <!--<strong><span>科隆科技</span></strong>-->
+                <!--<strong style="float: right"><span>57人</span>已报名</strong>-->
+            <!--</div>-->
             <div class="list-content" style="border: none;">
                 <strong style="float: left;margin-right: 100px;"><span>￥5000</span></strong>
                 <strong><span>科隆科技</span></strong>
@@ -113,6 +119,39 @@
         </div>
     </div>
 </div>
+
+
+<!-- 模态框 -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- 模态框头部 -->
+            <div class="modal-header">
+                <h4 class="modal-title">立即报名</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- 模态框主体 -->
+            <div class="modal-body">
+                <h3 style="font-size: 25px;color: #323232;">您确认要报名该需求吗？</h3>
+                <p style="font-size: 20px;color: #8f8f8f;">报名成功后，雇主将分别通过您上传的样图、成品以及您的宣传量进行三次筛选，对于每一轮的胜出者俊辉提供一定的资金奖励，并最终确定一位设计师最为本次任务的最终胜利者。如果雇主选中了您并希望与您有进一步的交流，平台将会给您发送通知，请在“消息”中查看通知。</p>
+                <p style="font-size: 20px;color: #1d1d1d;">注：雇主选择您并支付奖励金后，奖励金将直接转入您的账户中，请到“我的”中进行查收，如果有问题，请联系平台。</p>
+                <label><input type="radio">我已阅读<a>《设计交易服务协议》</a>并同意该协议</label>
+
+            </div>
+
+            <!-- 模态框底部 -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #2493D3;border-color: #2493D3">确认</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 
 <!---------------------------------------------------页脚------------------------------------------------------->
 <div class="foot">
