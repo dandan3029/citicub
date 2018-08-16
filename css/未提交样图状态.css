@@ -135,7 +135,7 @@ body{
 
 .content-left{
     width:68%;
-    height:1200px;
+    height:1500px;
     margin:0 2% 30px 0;
     float: left;
     background-color: white;
@@ -173,7 +173,7 @@ body{
     display: inline-block;
     width:100px;
     text-align: center;
-    margin: 10px 9.6% 30px 0;
+    margin: 10px 8.6% 30px 0;
     font-family: 楷体;
     font-size: 18px;
 }
