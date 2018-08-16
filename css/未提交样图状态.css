@@ -181,18 +181,13 @@ body{
 .content-left h5{
     font-size: 26px;
 }
-.upload-img{
-    width:auto;
-    height:auto;
-}
-.upload-img img{
-    width:228px;
-    height:186px;
-}
-.upload-img img:hover{
-    opacity: 0.8;
-}
 
+.img-div{
+    float: left;
+    line-height: 1;
+    margin-left: 5px;
+    overflow: hidden;
+}
 .upload{
     margin:30px 0 0 20px;
     display: inline-block;
