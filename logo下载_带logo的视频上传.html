@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>logo下载_带logo的视频上传</title>
+    <link href="css/logo下载_带logo的视频上传.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="//vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/7.0/video.min.js"></script>
+    <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
+
+    <script>
+
+        function upload(){
+            //获取所选择文件的名称
+            var file=document.getElementById("preview").files[0];
+
+            var fr = new FileReader;
+            var src = fr.readAsDataURL(file);
+            //获取p标签对象
+            var path = document.getElementById("path");
+            //将p标签的内容修改为文件名称
+            path.innerHTML=file['name'];
+        }
+
+        function download() {
+            //
+        }
+    </script>
+</head>
+<body style="background-color: rgb(242,242,242);">
+
+<div class="nav">
+    <div class="logo">
+        <img src="images/LOGO.png" style="height:60px;">
+    </div>
+
+    <div class="center">
+        <ul>
+            <li><a href="#" title="首页">首页</a></li>
+            <li><a href="#" title="成功案例">成功案例</a> </li>
+            <li><a class="active" href="#" style="color: #2493D3" title="企业任务">企业任务</a> </li>
+            <li><a href="#" title="作品">作品</a> </li>
+            <li><a href="#" title="榜单">榜单</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <li><a href="#" title="我的">我的</a> </li>
+        <li><a href="#" title="企业入口">企业入口</a></li>
+    </div>
+</div>
+
+<!-----------------------------------------------主体部分------------------------------------------------>
+<div class="contain">
+    <div class="content-left">
+        <img src="images/宣.png">
+        <p>祥瑞食品新品广告</p>
+        <div class="production-block">
+            <p>奖励金：<span style="color: #a33104">￥5000</span></p>
+            <p>任务类型：<span>产品广告</span></p>
+            <input type="button" value="取消报名">
+        </div>
+        <img src="images/进度（宣传）.png" style="margin: 30px 0;width:100%;">
+        <h6 style="margin-left: 1%;">发布需求</h6>
+        <h6>报名</h6>
+        <h6>审核样图</h6>
+        <h6>审核视频</h6>
+        <h6>宣传</h6>
+        <h6 style="margin: 0;">结果</h6>
+
+        <!--企业logo部分-->
+        <div class="enterprise-logo">
+            <h5>企业logo：</h5>
+            <img src="images/LOGO.png"><br>
+            <button style="margin-left: 160px;outline: none;">下载</button>
+        </div>
+        <!--下载广告视频部分-->
+        <div class="download-ad">
+            <BR>
+            <h5 style="margin-top: 30px;display: inline-block;">下载广告视频:</h5>
+            <h5 style="margin-top: 30px;display: inline-block;width: 740px;height:auto; border: 1px solid #bcb9b5;padding:5px;"> &nbsp;</h5>
+            <button style="outline: none;" onchange="download()">下载</button>
+        </div>
+
+        <!--在此处实现本地视频预览上传-->
+        <div class="upload-ad">
+            <BR>
+            <h5 style="margin-top: 30px;display: inline-block;">上传广告视频:</h5>
+            <h5 style="margin-top: 30px;display: inline-block;width: 740px;height:auto; border: 1px solid #bcb9b5;padding:5px;" id="path"> &nbsp;</h5>
+            <div class="upload">
+                <form>
+                    <input type="file" id="preview" onchange="upload()"/>
+                </form>
+            </div>
+
+            <img src="images/上传视频.png" style="margin:30px 0 0 164px;">
+        </div>
+
+        <button class="make_link">生成宣传链接</button>
+
+        <!--<div class="upload-video" style="width:786px;height:556px;">-->
+        <!--&lt;!&ndash;上传后的视频在这里显示，src中为视频地址&ndash;&gt;-->
+        <!--<video-->
+        <!--style="width:100%;"-->
+        <!--id="my-player"-->
+        <!--class="video-js"-->
+        <!--controls-->
+        <!--autoplay-->
+        <!--preload="auto"-->
+        <!--poster="//vjs.zencdn.net/v/oceans.png"-->
+        <!--data-setup='{}'>-->
+        <!--<source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">-->
+        <!--<source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">-->
+        <!--<source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg">-->
+        <!--<p class="vjs-no-js">-->
+        <!--To view this video please enable JavaScript, and consider upgrading to a-->
+        <!--web browser that-->
+        <!--<a href="http://videojs.com/html5-video-support/" target="_blank">-->
+        <!--supports HTML5 video-->
+        <!--</a>-->
+        <!--</p>-->
+        <!--</video>-->
+        <!--</div>-->
+    </div>
+    <div class="content-right">
+        <div class="right-top">
+            <div class="data-line">
+                <div class="grade">
+                    企业评分：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>87</span>
+                </div>
+            </div>
+            <div class="data-line">
+                <div class="data-box">
+                    <p>企业评分</p>
+                    <span>70%</span>
+                </div>
+                <div class="data-box">
+                    <p>浏览量</p>
+                    <span>30%</span>
+                </div>
+            </div>
+            <p><img src="images/时钟.png"><strong><span  style="color: #a33104">1天 </span>后宣传终止</strong></p>
+            <div class="employee">
+                <img src="images/头像.png">
+                <div class="employee-info">
+                    <h3><strong>Kenwd81</strong></h3>
+                    <h6>29381738492</h6>
+                </div>
+                <input type="button" value="联系雇主">
+            </div>
+        </div>
+        <div class="right-bottom">
+            <div class="list-head">
+                <p style="float: left">相关需求</p>
+                <p style="float: right;">更多></p>
+            </div>
+        </div>
+        <div class="right-bottom" style="background-color: white;margin-bottom: 30px;">
+            <div class="list-content">
+                <strong style="float: left;margin-right: 100px;"><span>￥5000</span></strong>
+                <strong><span>科隆科技</span></strong>
+                <strong style="float: right"><span>57人</span>已报名</strong>
+            </div>
+            <div class="list-content">
+                <strong style="float: left;margin-right: 100px;"><span>￥5000</span></strong>
+                <strong><span>科隆科技</span></strong>
+                <strong style="float: right"><span>57人</span>已报名</strong>
+            </div>
+            <div class="list-content">
+                <strong style="float: left;margin-right: 100px;"><span>￥5000</span></strong>
+                <strong><span>科隆科技</span></strong>
+                <strong style="float: right"><span>57人</span>已报名</strong>
+            </div>
+            <div class="list-content">
+                <strong style="float: left;margin-right: 100px;"><span>￥5000</span></strong>
+                <strong><span>科隆科技</span></strong>
+                <strong style="float: right"><span>57人</span>已报名</strong>
+            </div>
+            <div class="list-content" style="border: none;">
+                <strong style="float: left;margin-right: 100px;"><span>￥5000</span></strong>
+                <strong><span>科隆科技</span></strong>
+                <strong style="float: right"><span>57人</span>已报名</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------------------------------------------------页脚------------------------------------------------------->
+<div class="foot">
+    <div class="on_foot">
+        <div class="foot_part1">
+            <p class="foot_title1">我是设计师</p>
+            <ul>
+                <li><a href="#">认证流程</a></li>
+                <li><a href="#">邦得等级</a></li>
+                <li><a href="#">上传作品</a></li>
+                <li><a href="#">酬金分配</a></li>
+            </ul>
+        </div>
+        <div class="v_line"></div>
+        <div class="foot_part2">
+            <p class="foot_title2">我是企业</p>
+            <ul>
+                <li><a href="#">任务发布</a></li>
+                <li><a href="#">付款方式</a></li>
+                <li><a href="#">匹配机制</a></li>
+                <li><a href="#">广告签约</a></li>
+                <li><a href="#">平台案例</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="low_foot">
+        <ul>
+            <li class="v_line2"><a href="#">关于我们</a></li>
+            <li class="v_line2"><a href="#">发展历程</a></li>
+            <li class="v_line2"><a href="#">人才招募</a></li>
+            <li class="v_line2"><a href="#">联系我们</a></li>
+            <li class="v_line2"><a href="#">服务规则</a></li>
+            <li class="v_line2"><a href="#">商标版权</a></li>
+            <li class="v_line2"><a href="#">常见问题</a></li>
+            <li class="v_line2"><a href="#">网站地图</a></li>
+            <li class="v_line2"><a href="#">设计师指南</a></li>
+            <li><a href="#">友情连接</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
