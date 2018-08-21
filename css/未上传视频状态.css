@@ -188,13 +188,13 @@ body{
 
 .upload{
     position: relative;
-    top:-5px;
+    top:-8px;
     left:-15px;
     margin:30px 0 0 20px;
     display: inline-block;
-    width:auto;
-    height:32.67px;
-    background-image: url("../images/预览.png");
+    width:80px;
+    height:40px;
+    background-image: url("../images/浏览.png");
     background-size: 100% 100%;
 }
 
@@ -207,7 +207,7 @@ body{
     position: relative;
     top:-5px;
     width:78px;
-    height:32.67px;
+    height:40px;
     background-color: #c53702;
     color: #ffffff;
     border-radius: 5px;

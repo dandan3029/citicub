@@ -26,7 +26,10 @@
             //将p标签的内容修改为文件名称
             path.innerHTML=file['name'];
         }
-
+        
+        function sure_delete() {
+            
+        }
     </script>
 </head>
 <body style="background-color: rgb(242,242,242);">
@@ -71,13 +74,13 @@
 
         <!--在此处实现本地视频预览上传-->
         <h5 style="margin-top: 30px;display: inline-block;">上传广告视频:</h5>
-        <h5 style="margin-top: 30px;display: inline-block;width: 740px;height:auto; border: 1px solid #bcb9b5;" id="path"> &nbsp;</h5>
+        <h5 style="margin-top: 30px;display: inline-block;width: 740px;height:auto; border: 1px solid #bcb9b5;padding:5px;" id="path"> &nbsp;</h5>
         <div class="upload">
             <form>
                 <input type="file" id="preview" onchange="upload()"/>
             </form>
         </div>
-        <button class="delete" style="outline: none;">删除</button>
+        <button class="delete" style="outline: none;" class="btn btn-primary" data-toggle="modal" data-target="#myModal">删除</button>
 
         <img src="images/上传视频.png" style="margin:30px 0 0 164px;">
 
@@ -179,6 +182,25 @@
     </div>
 </div>
 
+<!-- 模态框 -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- 模态框主体 -->
+            <div class="modal-body">
+                <h3 style="font-size: 25px;color: #323232;">确认删除该视频？</h3>
+            </div>
+
+            <!-- 模态框底部 -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: #2493D3;border-color: #2493D3">确认</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <!---------------------------------------------------页脚------------------------------------------------------->
 <div class="foot">
