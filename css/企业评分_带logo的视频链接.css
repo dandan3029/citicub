@@ -71,6 +71,14 @@ body{
     text-decoration: none;
 }
 
+.right li a:hover .two-img{
+    display: block;
+}
+.two-img{
+    display: none;
+}
+
+
 .right li a:hover:not(.active){
     color:#2493D3;
     text-decoration: none;
@@ -240,15 +248,24 @@ body{
     height:auto;
     overflow: auto;
     padding-bottom: 30px;
-    border-bottom: 2px solid #999999;
+    border-bottom: 1px solid #999999;
 }
 .grade{
     font-size: 36px;
     color: #656565;
-    text-align: center;
+    margin:0 0 30px 60px;
 }
 .grade span{
-    font-size: 80px;
+    font-size: 60px;
+    color: #dd2c01;
+}
+.browse-count{
+    font-size: 36px;
+    color: #656565;
+    margin-left: 60px;
+}
+.browse-count span{
+    font-size: 45px;
     color: #dd2c01;
 }
 .right-top>p{

@@ -13,24 +13,6 @@
     <script src="//vjs.zencdn.net/7.0/video.min.js"></script>
     <script>window.HELP_IMPROVE_VIDEOJS = false;</script>
 
-    <script>
-
-        function upload(){
-            //获取所选择文件的名称
-            var file=document.getElementById("preview").files[0];
-
-            var fr = new FileReader;
-            var src = fr.readAsDataURL(file);
-            //获取p标签对象
-            var path = document.getElementById("path");
-            //将p标签的内容修改为文件名称
-            path.innerHTML=file['name'];
-        }
-
-        function download() {
-            //
-        }
-    </script>
 </head>
 <body style="background-color: rgb(242,242,242);">
 
@@ -50,6 +32,7 @@
     </div>
     <div class="right">
         <li><a href="#" title="我的">我的</a> </li>
+        <li><a href="#" title="手机APP">手机APP<div class="two-img"><img src="images/手机APP二维码.png"></div></a></li>
         <li><a href="#" title="企业入口">企业入口</a></li>
     </div>
 </div>
@@ -116,6 +99,9 @@
             <div class="data-line">
                 <div class="grade">
                     企业评分：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>87</span>
+                </div>
+                <div class="browse-count">
+                    总浏览次数：<span>312</span>
                 </div>
             </div>
             <div class="data-line">
