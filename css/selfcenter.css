@@ -12,7 +12,7 @@ th, td /* table elements 表格元素 */ {
 body{
     font: normal 100% Helvetica, Arial, sans-serif;
     font-family: "Adobe 黑体 Std R";
-    zoom: 80%;
+    /*zoom: 80%;*/
     height:1080px;
 }
 
@@ -52,38 +52,55 @@ body{
     height: 100%;
     width:25%;
     float: right;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 .right li{
     position: relative;
     display: inline-block;
-    text-align: right;
-    float: right;
-    width:20%;
+    float: left;
+    margin:0 8% 0 0;
 }
 
 .right li a{
     position: relative;
     display: block;
     color:#6c6c6c;
-    margin: 30px 0;
+    text-align: center;
+    padding: 30px 0;
     text-decoration: none;
 }
 
-.right li a:hover .two-img{
-    display: block;
-}
-.two-img{
-    display: none;
+.right img{
+    position: relative;
+    display: inline-block;
+    width:25px;
+    height:35px;
+    margin-top:22px;
 }
 
+.right li span{
+    position: relative;
+    display: inline-block;
+    margin:33px 0;
+}
+
+.right li img{
+    margin-right: 0px;
+}
 .right li a:hover:not(.active){
     color:#2493D3;
     text-decoration: none;
 }
-
-
+.h_app{
+    margin-top: 5px;
+}
+.h_log_in1{
+    left: 50%;
+}
+.h_log_in2{
+    left: -50%;
+}
 .center{
     position: relative;
     display: inline-block;
@@ -116,21 +133,15 @@ body{
     padding: 30px 0;
     text-decoration: none;
 }
-.center li a:hover{
+.center li a:hover:not(.active){
     position: relative;
     display: inline-block;
     color:#2493D3;
-    border-bottom: solid;
+    border-top: solid;
     border-color: #2493D3;
     text-decoration: none;
 }
 
-.active{
-    color:#2493D3;
-    border-bottom: solid;
-    border-color: #2493D3;
-    text-decoration: none;
-}
 /*********************************主体部分************************************************/
 .contain{
     margin-top: 150px;
