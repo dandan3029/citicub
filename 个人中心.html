@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link href="css/个人中心.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(242,242,242);">
+<!--导航栏-->
+<div class="nav">
+    <div class="logo">
+        <img src="images/LOGO.png" style="height:60px;">
+    </div>
+
+    <div class="center">
+        <ul>
+            <li><a href="#" title="首页">首页</a></li>
+            <li><a href="#" title="成功案例">成功案例</a> </li>
+            <li><a href="#" title="企业任务">企业任务</a> </li>
+            <li><a href="#" title="作品">作品</a> </li>
+            <li><a href="#" title="榜单">榜单</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <li><a href="#" title="我的" style="color: #4ecf79">我的</a> </li>
+        <li><a href="#" title="手机APP">手机APP<div class="two-img"><img src="images/手机APP二维码.png"></div></a></li>
+        <li><a href="#" title="企业入口">设计师入口</a></li>
+    </div>
+</div>
+<div class="contain">
+    <div class="content-left">
+        <img src="images/大头像.png">
+        <p><strong>用户昵称</strong></p>
+        <ul>
+            <li><a href="#" title="用户信息" class="left-active" style="color: white">用户信息</a></li>
+            <li><a href="#" title="花旗银行">花旗银行</a></li>
+            <li><a href="#" title="第 三 方">第 三 方</a></li>
+            <li><a href="#" title="介绍信息">介绍信息</a></li>
+            <li><a href="#" title="修改密码">修改密码</a></li>
+            <li><a href="#" title="账户统计">账户统计</a></li>
+            <li><a href="#" title="我的任务">我的任务</a></li>
+        </ul>
+    </div>
+
+    <div class="content-right">
+        <div class="title">
+            <div class="box">
+                <span style="color:#4ecf79;">用户基本信息</span>
+            </div>
+
+        </div>
+        <!--表单部分-->
+        <form action="post" class="f-register">
+            <ul>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">账号</div>
+                        <div class="item-input">
+                            <input type="text" id="username" placeholder="请输入手机号码"
+                                   disabled="disabled" value="18525525028" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">邮箱</div>
+                        <div class="item-input">
+                            <input type="text" id="email" placeholder="要升级为设计师必须填写此项"
+                                   disabled="disabled" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">昵称</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="要升级为设计师必须填写此项" disabled="disabled"
+                                   value="Kevin" id="nickname" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">真实姓名</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="要升级为设计师必须填写此项" disabled="disabled"
+                                   id="realname" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">性别</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="保密" disabled="disabled"
+                                   id="sex" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">生日</div>
+                        <div class="item-input">
+                            <input type="date" placeholder="保密" disabled="disabled"
+                                   id="birthday" value="男" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">住址</div>
+                        <div class="item-input">
+                            <input type="text" id="realm" placeholder="要升级为设计师必须填写此项"
+                                   disabled="disabled" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner" style="border: none;">
+                        <div class="inner-left">
+                            <div class="item-title-yan">用户身份</div>
+                            <div class="item-input-yan">
+                                <input type="text" placeholder="普通用户" disabled="disabled"
+                                       value="普通用户" id="role" name="mobile">
+                            </div>
+                        </div>
+                        <input type="button" id="b_shift" value="升级为设计师" onclick="shift()">
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <!--确认阅读用户协议-->
+        <div class="checkbox-wrap">
+            <input type="checkbox" name="choose" id="check">
+            <label>我已阅读并同意遵守<a href="#" id="protocal" title="protocol" style="color: #4ecf79">《泛意设计师协议》</a></label>
+        </div>
+        <input type="button" class="register-button" id="b1" value="修改个人资料" onclick="onChange1()">
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
