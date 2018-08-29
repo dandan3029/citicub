@@ -148,9 +148,9 @@ body{
     margin-bottom: 30px;
 }
 .content-left img{
-    width:82%;
+    width:60%;
     height:auto;
-    margin:30px 9%;
+    margin:30px 20%;
 }
 .content-left p{
     display: inline-block;
