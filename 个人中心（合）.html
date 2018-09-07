@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心（合）</title>
+    <link href="css/个人中心（合）.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(242,242,242);" data-spy="scroll" data-target=".nav-bar"  data-offset="30">
+<!--导航栏-->
+<div class="nav">
+    <div class="logo">
+        <img src="images/LOGO.png" style="height:60px;">
+    </div>
+
+    <div class="center">
+        <ul>
+            <li><a href="#" title="首页">首页</a></li>
+            <li><a href="#" title="成功案例">成功案例</a> </li>
+            <li><a href="#" title="企业任务">企业任务</a> </li>
+            <li><a href="#" title="作品">作品</a> </li>
+            <li><a href="#" title="榜单">榜单</a></li>
+        </ul>
+    </div>
+    <div class="right">
+        <li><a href="#" title="我的" style="color: #4ecf79">我的</a> </li>
+        <li><a href="#" title="手机APP">手机APP<div class="two-img"><img src="images/手机APP二维码.png"></div></a></li>
+        <li><a href="#" title="企业入口">设计师入口</a></li>
+    </div>
+</div>
+
+<!-----------------滚动监听的悬浮导航栏----------------->
+<nav class="nav-bar">
+    <ul class="nav-tabs">
+        <li class="nav-item"><a href="#sectionB" class="nav-link active">用户基本信息</a></li>
+        <li class="nav-item"><a href="#sectionC" class="nav-link">花旗银行</a></li>
+        <li class="nav-item"><a href="#sectionA" class="nav-link">第三方</a></li>
+        <li class="nav-item"><a href="#sectionD-11" class="nav-link">介绍信息</a></li>
+        <li class="nav-item"><a href="#sectionD-2" class="nav-link">账户统计</a></li>
+        <li class="nav-item"><a href="#sectionD-12" class="nav-link">修改密码</a></li>
+        <li class="nav-item"><a href="#sectionE" class="nav-link">我的任务</a></li>
+    </ul>
+</nav>
+
+<!--------------------------------------------------------主体部分------------------------------------------------->
+<div class="contain">
+
+    <!-------------------------------------------------用户基本信息-------------------------------->
+    <div class="containB" id="sectionB">
+        <!--标题部分-->
+        <div class="title">
+            <div class="box" style="border-bottom: 3px solid #4ecf79">
+                <span style="color:#4ecf79;">&nbsp;&nbsp;用户基本信息</span>
+            </div>
+        </div>
+        <!--表单部分-->
+        <form action="post" class="f-register">
+            <ul>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">账号</div>
+                        <div class="item-input">
+                            <input type="text" id="username" placeholder="请输入手机号码"
+                                   disabled="disabled" value="18525525028" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">邮箱</div>
+                        <div class="item-input">
+                            <input type="text" id="email" placeholder="要升级为设计师必须填写此项"
+                                   disabled="disabled" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">昵称</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="要升级为设计师必须填写此项" disabled="disabled"
+                                   value="Kevin" id="nickname" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">真实姓名</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="要升级为设计师必须填写此项" disabled="disabled"
+                                   id="realname" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">性别</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="保密" disabled="disabled"
+                                   id="sex" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">生日</div>
+                        <div class="item-input">
+                            <input type="date" placeholder="保密" disabled="disabled"
+                                   id="birthday" value="男" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">住址</div>
+                        <div class="item-input">
+                            <input type="text" id="realm" placeholder="要升级为设计师必须填写此项"
+                                   disabled="disabled" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner" style="border: none;">
+                        <div class="inner-left">
+                            <div class="item-title-yan">用户身份</div>
+                            <div class="item-input-yan">
+                                <input type="text" placeholder="普通用户" disabled="disabled"
+                                       value="普通用户" id="role" name="mobile">
+                            </div>
+                        </div>
+                        <input type="button" id="b_shift" value="升级为设计师" onclick="shift()">
+                    </div>
+                </li>
+            </ul>
+        </form>
+        <!--确认阅读用户协议-->
+        <div class="checkbox-wrap">
+            <input type="checkbox" name="choose" id="check">
+            <label>我已阅读并同意遵守<a href="#" id="protocal" title="protocol" style="color: #4ecf79">《泛意设计师协议》</a></label>
+        </div>
+        <input type="button" class="register-button" id="b1" value="修改个人资料" onclick="onChange1()">
+    </div>
+
+    <!-------------------------------------------------花旗银行账户绑定------------------------->
+    <div class="containC" id="sectionC">
+        <div class="title">
+            <div class="box" style="border-bottom: 3px solid #053070">
+                <span style="color:#053070;">&nbsp;&nbsp;花旗银行账户绑定</span>
+                <img style="width: 20%;height: 120%;bottom: auto;float: right;" src="images/citi.png">
+            </div>
+        </div>
+        <form action="post" class="f-register">
+            <ul>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">银行账号</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="还没有绑定" disabled="disabled"
+                                   id="citi_A" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">默认账户</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="" disabled="disabled"
+                                   id="citi_C" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <input type="button" id="b7" class="register-buttonC" value="绑定／更改绑定" onclick="onChange5()">
+        </form>
+    </div>
+
+    <!--------------------------------------------------第三方平台绑定信息-------------------------->
+    <div class="containA" id="sectionA">
+        <div class="title">
+            <div class="box" style="border-bottom: 3px solid #4ecf79">
+                <span style="color:#4ecf79;">&nbsp;&nbsp;第三方平台绑定信息</span>
+            </div>
+        </div>
+        <form action="post" class="f-register">
+            <ul>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">QQ</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="暂未绑定" disabled="disabled"
+                                   id="qq" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">微信</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="暂未绑定" disabled="disabled"
+                                   id="weixin" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-inner">
+                        <div class="item-title">微博</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="暂未绑定" disabled="disabled"
+                                   id="weibo" value="" name="mobile">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <input type="button" class="register-buttonA" id="b2" value="更改第三方平台绑定" onclick="onChange2()">
+        </form>
+    </div>
+
+    <!--------------------------------------------------介绍信息--------------------------------------->
+    <div class="containD">
+        <div class="left-box">
+            <div id="sectionD-11">
+                <div class="title">
+                    <div class="box" style="border-bottom: 3px solid #4ecf79">
+                        <span style="color:#4ecf79;">介绍信息</span>
+                    </div>
+                </div>
+                <!--表单部分-->
+                <form action="post" class="f-register">
+                    <ul>
+                        <li>
+                            <div class="item-inner">
+                                <div class="item-title">签名</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="还没有签名" disabled="disabled"
+                                           id="sign" value="" name="mobile">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-inner">
+                                <div class="item-title">工作经历</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="没有填写" disabled="disabled"
+                                           id="sign1" value="" name="mobile">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-inner">
+                                <div class="item-title">教育经历</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="没有填写" disabled="disabled"
+                                           id="sign2" value="" name="mobile">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-inner">
+                                <div class="item-title">曾获奖励</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="没有填写" disabled="disabled"
+                                           id="sign3" value="" name="mobile">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="item-input" id="info1" style="font-size: 25px; font-family: 微软雅黑;visibility: hidden" >
+                                &bull;&nbsp;字数不可超过20字</p>
+                        </li>
+                    </ul>
+                </form>
+                <input type="button" class="register-button" id="b3" value="修改信息" onclick="onchange3()">
+            </div>
+            <div id="sectionD-12">
+                <div class="title">
+                    <div class="box" style="border-bottom: 3px solid #4ecf79">
+                        <span style="color:#4ecf79;">修改密码</span>
+                    </div>
+                </div>
+                <form action="post" class="f-register">
+                    <ul>
+                        <li>
+                            <div class="item-inner">
+                                <div class="item-title">新密码</div>
+                                <div class="item-input">
+                                    <input type="password" placeholder="请输入新密码"
+                                           id="psd1" value="" name="mobile">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-inner">
+                                <div class="item-title">确认新密码</div>
+                                <div class="item-input">
+                                    <input type="password" placeholder="重新输入以确认"
+                                           id="psd2" value="" name="mobile">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                <input type="button" class="register-button" value="提交修改" onclick="onChange4()">
+            </div>
+        </div>
+        <div class="right-box" id="sectionD-2">
+            <div class="title">
+                <div class="box" style="border-bottom: 3px solid #4ecf79">
+                    <span style="color:#4ecf79;">账户统计</span>
+                </div>
+            </div>
+            <!--表单部分-->
+            <form action="post" class="f-register">
+                <ul>
+                    <li>
+                        <div class="item-innerPro" align="left" id="progress_info">经验进度条:</div>
+                        <div class="item-innerPro" id="progressbar1"></div>
+                    </li>
+                    <li>
+                        <div class="item-inner">
+                            <div class="item-title">经验值</div>
+                            <div class="item-inputS">
+                                <input type="text" placeholder="请先激活为设计师" disabled="disabled"
+                                       id="exp" value="100" name="mobile">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-inner">
+                            <div class="item-title">等级</div>
+                            <div class="item-inputS">
+                                <input type="text" placeholder="" disabled="disabled"
+                                       id="rank" value="1" name="mobile">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-inner">
+                            <div class="item-title">积分</div>
+                            <div class="item-inputS">
+                                <input type="text" placeholder="0" disabled="disabled"
+                                       id="credit" value="0" name="mobile">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-inner">
+                            <div class="item-title">参与任务数</div>
+                            <div class="item-inputS">
+                                <input type="text" placeholder="1" disabled="disabled"
+                                       id="count1" value="1" name="mobile">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-inner">
+                            <div class="item-title">完成任务数</div>
+                            <div class="item-inputS">
+                                <input type="text" placeholder="1" disabled="disabled"
+                                       id="count2" value="1" name="mobile">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-inner">
+                            <div class="item-title">总转发量</div>
+                            <div class="item-inputS">
+                                <input type="text" placeholder="0" disabled="disabled"
+                                       id="count3" value="0" name="mobile">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-inner">
+                            <div class="item-title">总关注量</div>
+                            <div class="item-inputS">
+                                <input type="text" placeholder="0" disabled="disabled"
+                                       id="count4" value="0" name="mobile">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-inner">
+                            <div class="item-title">总浏览量</div>
+                            <div class="item-inputS">
+                                <input type="text" placeholder="0" disabled="disabled"
+                                       id="count5" value="0" name="mobile">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <!--------------------------------------------------我的任务------------------------------------>
+    <div class="containE" id="sectionE">
+        <div class="title" style="width:84%;">
+            <div class="box" style="border-bottom: 3px solid #4ecf79">
+                <span style="color:#4ecf79;">&nbsp;&nbsp;我的任务</span>
+            </div>
+        </div>
+        <div class="sort-box">
+            <ul>
+                <li><label><div class="aa">任务分类：</div></label></li>
+                <li><label><input type="radio" name="sort" value="1" onclick="ok(this)"><div class="aa">综合推荐</div></label></li>
+                <li><label><input type="radio" name="sort" value="2" onclick="ok(this)"><div class="aa">最新上线</div></label></li>
+                <li><label><input type="radio" name="sort" value="3" onclick="ok(this)"><div class="aa">人气最高</div></label></li>
+            </ul>
+        </div>
+        <script>
+            var radio = document.querySelectorAll('input[name="sort"]');//选中所有同名单选框
+            radio[0].setAttribute("data-checked","yes");//修改属性，设为标识
+            radio[0].parentNode.childNodes[1].setAttribute('class',"bb");//修改类名
+            function ok (check) {
+                for(var i=0;i<radio.length;i++){//遍历同名单选框
+                    if(radio[i]==check){//如果点击的是当前单选框
+                        radio[i].setAttribute("data-checked","yes");//修改属性，设为标识
+                        radio[i].parentNode.childNodes[1].setAttribute('class',"bb");//修改类名
+                    }else if(radio[i].getAttribute('data-checked')){
+                        radio[i].removeAttribute('data-checked');
+                        radio[i].parentNode.childNodes[1].setAttribute('class',"aa");
+                    }
+                }
+            }
+        </script>
+
+        <div class="main-content">
+            <div class="row">
+                <div class="col">
+                    <div class="little-box">
+                        <a href="案例1.html">
+                            <img src="images/卡片1.png" style="width:100%;">
+                            <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                            <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                            <span>1920</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="little-box">
+                        <a href="案例1.html">
+                            <img src="images/卡片2.png" style="width:100%;">
+                            <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                            <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                            <span>1920</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="little-box">
+                        <a href="案例1.html">
+                            <img src="images/卡片3.png" style="width:100%;">
+                            <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                            <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                            <span>1920</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="little-box">
+                        <a href="案例1.html">
+                            <img src="images/卡片1.png" style="width:100%;">
+                            <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                            <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                            <span>1920</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="little-box">
+                        <a href="案例1.html">
+                            <img src="images/卡片2.png" style="width:100%;">
+                            <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                            <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                            <span>1920</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="little-box">
+                        <a href="案例1.html">
+                            <img src="images/卡片3.png" style="width:100%;">
+                            <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                            <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                            <span>1920</span>
+                        </a>
+                    </div>
+                </div>
+            </div><div class="row">
+            <div class="col">
+                <div class="little-box">
+                    <a href="案例1.html">
+                        <img src="images/卡片1.png" style="width:100%;">
+                        <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                        <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                        <span>1920</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="little-box">
+                    <a href="案例1.html">
+                        <img src="images/卡片2.png" style="width:100%;">
+                        <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                        <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                        <span>1920</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="little-box">
+                    <a href="案例1.html">
+                        <img src="images/卡片3.png" style="width:100%;">
+                        <h4>连岛景区旅游形象 打造新旅游形象</h4>
+                        <img src="images/browse.png" style="margin:0 0 10px 20px;">
+                        <span>1920</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
